@@ -46,5 +46,19 @@ This project streams **Nifty 50 historical stock data** to **Google Cloud Pub/Su
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/nifty50-streaming.git
-cd nifty50-streaming
+git clone https://github.com/priya369/dataflow-nse.git
+cd dataflow-nse/dataflow_resource
+
+### Run the publisher script:
+
+```bash
+python send_data_to_topic.py
+
+### Submit the pipeline to Dataflow:
+```bash
+python dataflow_pubsub.py
+
+## Architecture Diagram
+
+NSE Data → Pub/Sub → Dataflow → BigQuery
+
