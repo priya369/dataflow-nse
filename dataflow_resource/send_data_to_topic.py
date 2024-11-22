@@ -9,8 +9,7 @@ PUBSUB_TOPIC = 'projects/valid-verbena-437709-h5/topics/dataops-nse-topic'  # Re
 publisher = pubsub_v1.PublisherClient()
 
 # List of Nifty 50 stock symbols
-nifty_50_symbols = ["RELIANCE", "TCS", "INFY", "HDFCBANK", "ICICIBANK", "HINDUNILVR", "KOTAKBANK", "SBIN", "HDFC", "BHARTIARTL", 
-                    "BAJFINANCE", "ITC", "AXISBANK", "LT", "ASIANPAINT", "DMART", "HCLTECH", "MARUTI", "WIPRO", "HDFCLIFE", 
+nifty_50_symbols = ["LT", "ASIANPAINT", "DMART", "HCLTECH", "MARUTI", "WIPRO", "HDFCLIFE", 
                     "SUNPHARMA", "TITAN", "ULTRACEMCO", "NESTLEIND", "POWERGRID", "ONGC", "JSWSTEEL", "BAJAJFINSV", "COALINDIA", "NTPC"]
 
 end_date = datetime.datetime.now().strftime("%d-%m-%Y")
