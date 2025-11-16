@@ -5,7 +5,7 @@ import json
 import time
 
 # Pub/Sub configuration
-PUBSUB_TOPIC = 'projects/valid-verbena-437709-h5/topics/dataops-nse-topic'  # Replace with your Pub/Sub topic
+PUBSUB_TOPIC = 'projects/data-oasis-472909-u4/topics/dataops-nse-topic'  # Replace with your Pub/Sub topic
 publisher = pubsub_v1.PublisherClient()
 
 # List of Nifty 50 stock symbols
