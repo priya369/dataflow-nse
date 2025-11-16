@@ -7,7 +7,7 @@ import json
 PROJECT_ID = 'valid-verbena-437709-h5'
 DATASET_ID = 'nifty50'
 TABLE_ID = 'nifty50_historical_data_65'
-PUBSUB_SUBSCRIPTION = 'projects/valid-verbena-437709-h5/subscriptions/dataops-nse-topic-sub'
+PUBSUB_SUBSCRIPTION = 'projects/data-oasis-472909-u4/subscriptions/dataops-nse-topic-sub'
 
 table_schema = {
     'fields': [
