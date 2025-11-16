@@ -4,7 +4,7 @@ from apache_beam.io.gcp.bigquery import WriteToBigQuery
 from apache_beam.io.gcp.pubsub import ReadFromPubSub
 import json
 
-PROJECT_ID = 'valid-verbena-437709-h5'
+PROJECT_ID = 'data-oasis-472909-u4'
 DATASET_ID = 'nifty50'
 TABLE_ID = 'nifty50_historical_data_65'
 PUBSUB_SUBSCRIPTION = 'projects/data-oasis-472909-u4/subscriptions/dataops-nse-topic-sub'
@@ -42,8 +42,8 @@ pipeline_options = PipelineOptions(
     runner='DataflowRunner',
     project=PROJECT_ID,
     region='us-east1',
-    temp_location='gs://dataops-dataflow-2024/temp',
-    staging_location='gs://dataops-dataflow-2024/staging',
+    temp_location='gs://dataops-dataflow-2025/temp',
+    staging_location='gs://dataops-dataflow-2025/staging',
     streaming=True,
     job_name='streaming-pubsub-bq-nifty50-v1',
     num_workers=1,
@@ -51,7 +51,7 @@ pipeline_options = PipelineOptions(
     disk_size_gb=50,
     autoscaling_algorithm='THROUGHPUT_BASED',
     machine_type='n1-standard-4',
-    service_account_email='dataops-guru-sa@valid-verbena-437709-h5.iam.gserviceaccount.com'
+    service_account_email='dataops-guru-sa@data-oasis-472909-u4.iam.gserviceaccount.com'
 )
 
 # Define the Apache Beam pipeline
